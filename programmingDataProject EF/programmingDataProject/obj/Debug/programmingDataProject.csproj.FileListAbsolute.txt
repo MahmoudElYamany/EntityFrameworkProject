@@ -1,0 +1,49 @@
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\bin\Debug\programmingDataProject.exe.config
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\bin\Debug\programmingDataProject.exe
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\bin\Debug\programmingDataProject.pdb
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.csprojAssemblyReference.cache
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.Properties.Resources.resources
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.csproj.GenerateResource.cache
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.csproj.CoreCompileInputs.cache
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.exe
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.pdb
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.MainBody.resources
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\bin\Debug\ar-EG\programmingDataProject.resources.dll
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\ar-EG\programmingDataProject.resources.dll
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.loginBody.resources
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.loginBody.ar-EG.resources
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.New_Edit_StoargeBody.resources
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.Recipt_of_items.resources
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.Transport_Between_Storages.resources
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.New_Edit_PersonBody.resources
+C:\Users\MahmoudELYamany\source\repos\programmingDataProject\programmingDataProject\obj\Debug\programmingDataProject.Recipt_of_items_Customer.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\bin\Debug\programmingDataProject.exe.config
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\bin\Debug\programmingDataProject.exe
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\bin\Debug\programmingDataProject.pdb
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\bin\Debug\ar-EG\programmingDataProject.resources.dll
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\bin\Debug\EntityFramework.dll
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\bin\Debug\EntityFramework.SqlServer.dll
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\bin\Debug\EntityFramework.xml
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\bin\Debug\EntityFramework.SqlServer.xml
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.csprojAssemblyReference.cache
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.loginBody.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.MainBody.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.New_Edit_PersonBody.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.Properties.Resources.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.New_Edit_StoargeBody.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.Recipt_of_items_Customer.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.Recipt_of_items.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.Transport_Between_Storages.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.loginBody.ar-EG.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.csproj.GenerateResource.cache
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.csproj.CoreCompileInputs.cache
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\ar-EG\programmingDataProject.resources.dll
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.csproj.CopyComplete
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.exe
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.pdb
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.New_Edit_items.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.Storages_Report.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.Trasnactions_reports.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.MainBody.ar-EG.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.New_Edit_items.ar-EG.resources
+B:\OneDrive\ITI\projects\Entity framework\programmingDataProject EF\programmingDataProject\obj\Debug\programmingDataProject.New_Edit_StoargeBody.ar-EG.resources

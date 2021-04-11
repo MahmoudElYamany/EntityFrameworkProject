@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c0db37b1e7ae42ddbd1513cf9e96643a" Name="Diagram1">
+        <EntityTypeShape EntityType="Company_ProjectModel.Client" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.Customers_Suppliers" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.Emloyee" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.item" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.Permission" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.Storage" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.Storage_cust_sup" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.Storage_item" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Company_ProjectModel.Transport_items" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Client_Customers_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Client_items" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Client_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Permission_Customers_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Storage_cust_sup_Customers_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Storage_Enployees" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Permission_items" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Storage_item_items" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Permission_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Storage_cust_sup_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="Company_ProjectModel.FK_Storage_item_Storage" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

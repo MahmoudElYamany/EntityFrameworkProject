@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18A30B57-2995-42D3-A468-10534CAFE4BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>programmingDataProject</RootNamespace>
+    <AssemblyName>programmingDataProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers_Suppliers.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Emloyee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="loginBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginBody.Designer.cs">
+      <DependentUpon>loginBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainBody.Designer.cs">
+      <DependentUpon>MainBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="New_Edit_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Edit_items.Designer.cs">
+      <DependentUpon>New_Edit_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Edit_PersonBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Edit_PersonBody.Designer.cs">
+      <DependentUpon>New_Edit_PersonBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permission.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="New_Edit_StoargeBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Edit_StoargeBody.Designer.cs">
+      <DependentUpon>New_Edit_StoargeBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipt_Of_Items_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipt_Of_Items_Supplier.Designer.cs">
+      <DependentUpon>Recipt_Of_Items_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipt_of_items_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipt_of_items_Customer.Designer.cs">
+      <DependentUpon>Recipt_of_items_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Storages_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storages_Report.Designer.cs">
+      <DependentUpon>Storages_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storage_cust_sup.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Storage_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Between_Storages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transport_Between_Storages.Designer.cs">
+      <DependentUpon>Transport_Between_Storages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_items.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Trasnactions_reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trasnactions_reports.Designer.cs">
+      <DependentUpon>Trasnactions_reports.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="loginBody.ar-EG.resx">
+      <DependentUpon>loginBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginBody.resx">
+      <DependentUpon>loginBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainBody.ar-EG.resx">
+      <DependentUpon>MainBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainBody.resx">
+      <DependentUpon>MainBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Edit_items.ar-EG.resx">
+      <DependentUpon>New_Edit_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Edit_items.resx">
+      <DependentUpon>New_Edit_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Edit_PersonBody.resx">
+      <DependentUpon>New_Edit_PersonBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Edit_StoargeBody.ar-EG.resx">
+      <DependentUpon>New_Edit_StoargeBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="New_Edit_StoargeBody.resx">
+      <DependentUpon>New_Edit_StoargeBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipt_of_items_Customer.resx">
+      <DependentUpon>Recipt_of_items_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipt_Of_Items_Supplier.resx">
+      <DependentUpon>Recipt_Of_Items_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storages_Report.resx">
+      <DependentUpon>Storages_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transport_Between_Storages.resx">
+      <DependentUpon>Transport_Between_Storages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trasnactions_reports.resx">
+      <DependentUpon>Trasnactions_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Storage.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

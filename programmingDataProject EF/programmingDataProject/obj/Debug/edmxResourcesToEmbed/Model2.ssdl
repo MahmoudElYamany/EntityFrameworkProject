@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Company_ProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="ID_Company" />
+    </Key>
+    <Property Name="ID_Company" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="location" Type="varchar" MaxLength="50" />
+    <Property Name="Manger_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Customers_Suppliers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone" Type="int" />
+    <Property Name="mobile" Type="int" />
+    <Property Name="fax" Type="int" />
+    <Property Name="Mail" Type="varchar" MaxLength="50" />
+    <Property Name="website" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="company_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Enployees">
+    <Key>
+      <PropertyRef Name="ID_Emp" />
+    </Key>
+    <Property Name="ID_Emp" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="int" Nullable="false" />
+    <Property Name="phone" Type="int" />
+    <Property Name="mobile" Type="int" />
+    <Property Name="Mail" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Company_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="items">
+    <Key>
+      <PropertyRef Name="ID_item" />
+    </Key>
+    <Property Name="ID_item" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="size" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="expireDate" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Storage">
+    <Key>
+      <PropertyRef Name="ID_storage" />
+    </Key>
+    <Property Name="ID_storage" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="location" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Company_ID" Type="int" Nullable="false" />
+    <Property Name="Manger_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Storage_item">
+    <Key>
+      <PropertyRef Name="Storage_ID" />
+      <PropertyRef Name="Item_ID" />
+    </Key>
+    <Property Name="Storage_ID" Type="int" Nullable="false" />
+    <Property Name="Item_ID" Type="int" Nullable="false" />
+    <Property Name="amount" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Company_Enployees">
+    <End Role="Enployees" Type="Self.Enployees" Multiplicity="0..1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enployees">
+        <PropertyRef Name="ID_Emp" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="Manger_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customers_Suppliers_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Customers_Suppliers" Type="Self.Customers_Suppliers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="ID_Company" />
+      </Principal>
+      <Dependent Role="Customers_Suppliers">
+        <PropertyRef Name="company_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Enployees_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Enployees" Type="Self.Enployees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="ID_Company" />
+      </Principal>
+      <Dependent Role="Enployees">
+        <PropertyRef Name="Company_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Storage_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Storage" Type="Self.Storage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="ID_Company" />
+      </Principal>
+      <Dependent Role="Storage">
+        <PropertyRef Name="Company_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Storage_Enployees">
+    <End Role="Enployees" Type="Self.Enployees" Multiplicity="1" />
+    <End Role="Storage" Type="Self.Storage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enployees">
+        <PropertyRef Name="ID_Emp" />
+      </Principal>
+      <Dependent Role="Storage">
+        <PropertyRef Name="Manger_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Storage_item_items">
+    <End Role="items" Type="Self.items" Multiplicity="1" />
+    <End Role="Storage_item" Type="Self.Storage_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="items">
+        <PropertyRef Name="ID_item" />
+      </Principal>
+      <Dependent Role="Storage_item">
+        <PropertyRef Name="Item_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Storage_item_Storage">
+    <End Role="Storage" Type="Self.Storage" Multiplicity="1" />
+    <End Role="Storage_item" Type="Self.Storage_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Storage">
+        <PropertyRef Name="ID_storage" />
+      </Principal>
+      <Dependent Role="Storage_item">
+        <PropertyRef Name="Storage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Company_ProjectModelStoreContainer">
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers_Suppliers" EntityType="Self.Customers_Suppliers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Enployees" EntityType="Self.Enployees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="items" EntityType="Self.items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Storage" EntityType="Self.Storage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Storage_item" EntityType="Self.Storage_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Company_Enployees" Association="Self.FK_Company_Enployees">
+      <End Role="Enployees" EntitySet="Enployees" />
+      <End Role="Company" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customers_Suppliers_Company" Association="Self.FK_Customers_Suppliers_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Customers_Suppliers" EntitySet="Customers_Suppliers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Enployees_Company" Association="Self.FK_Enployees_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Enployees" EntitySet="Enployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Storage_Company" Association="Self.FK_Storage_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Storage" EntitySet="Storage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Storage_Enployees" Association="Self.FK_Storage_Enployees">
+      <End Role="Enployees" EntitySet="Enployees" />
+      <End Role="Storage" EntitySet="Storage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Storage_item_items" Association="Self.FK_Storage_item_items">
+      <End Role="items" EntitySet="items" />
+      <End Role="Storage_item" EntitySet="Storage_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Storage_item_Storage" Association="Self.FK_Storage_item_Storage">
+      <End Role="Storage" EntitySet="Storage" />
+      <End Role="Storage_item" EntitySet="Storage_item" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
